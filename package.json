@@ -7,7 +7,7 @@
   "main": ".eslintrc.js",
   "scripts": {
     "dev": "nodemon src/app/server.js",
-    "start": "node -r sucrase/register src/server.js"
+    "start": "node -r sucrase/register src/app/server.js"
   },
   "license": "ISC",
   "dependencies": {
