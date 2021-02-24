@@ -1,13 +1,13 @@
 {
-  "name": "test-NodeJSJunior",
+  "name": "bpl3",
   "version": "1.0.0",
   "description": "",
-  "repository": "https://github.com/FernSalgado/test-NodeJSJunior.git",
+  "repository": "https://github.com/FernSalgado/BPL3_API.git",
   "author": "Fernando da Silva Salgado <salgado.fernando93@gmail.com>",
   "main": ".eslintrc.js",
   "scripts": {
     "dev": "nodemon src/app/server.js",
-    "start": "node -r sucrase/register src/app/server.js"
+    "start": "node src/app/server.js"
   },
   "license": "ISC",
   "dependencies": {
