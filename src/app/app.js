@@ -2,8 +2,7 @@ var express = require('express');
 var path = require('path');
 var app = require('./routes');
 var cors = require('cors')
-
-import '../database';
+require('../database');
 
 class App {
   constructor() {
