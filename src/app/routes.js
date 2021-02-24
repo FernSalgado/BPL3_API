@@ -1,7 +1,7 @@
 var Router = require('express');
 
 var memberController = require('../controllers/memberController');
-var TheHiddenController = ('../controllers/theHiddenControler');
+var TheHiddenController = require('../controllers/theHiddenControler');
 
 const routes = new Router();
 
