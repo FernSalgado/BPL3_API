@@ -1,6 +1,6 @@
 var TheHidden = require('../models/TheHidden');
-var TheFeared = require( '../models/TheFeared');
-var TheFormed = require( '../models/theFormed');
+var TheFeared = require('../models/TheFeared');
+var TheFormed = require('../models/TheFormed');
 var TheTwisted = require( '../models/TheTwisted');
 
 class TheHiddenController{
