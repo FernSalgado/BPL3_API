@@ -1,7 +1,7 @@
-import express from 'express';
-import path from 'path';
-import app from './routes';
-import cors from 'cors';
+var express = require('express');
+var path = require('path');
+var app = require('./routes');
+var cors = require('cors')
 
 import '../database';
 
