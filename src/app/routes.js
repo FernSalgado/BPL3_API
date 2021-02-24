@@ -1,7 +1,7 @@
-import { Router } from 'express';
+var Router = require('express');
 
-import memberController from '../controllers/memberController';
-import TheHiddenController from '../controllers/theHiddenControler';
+var memberController = requier('../controllers/memberController');
+var TheHiddenController = ('../controllers/theHiddenControler');
 
 const routes = new Router();
 
