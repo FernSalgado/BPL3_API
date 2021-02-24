@@ -1,4 +1,4 @@
-import mongoose, { mongo } from 'mongoose';
+var mongoose = require( 'mongoose');
 
 const Team = mongoose.Schema({
         _id:String,
@@ -7,4 +7,4 @@ const Team = mongoose.Schema({
         Points:Number
 });
 
-export default mongoose.model('Team', Team, "Team");
+module.exports = mongoose.model('Team', Team, "Team");

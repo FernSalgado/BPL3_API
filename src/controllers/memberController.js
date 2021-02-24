@@ -1,5 +1,5 @@
-import Members from '../models/members';
-import Team from '../models/team';
+var Members =require('../models/members');
+var Team =require('../models/team');
 class MemberController{
     async getAll(req,res){
         try{
@@ -27,4 +27,4 @@ class MemberController{
 
 
 }
-export default new MemberController();
+module.exports = new MemberController();

@@ -1,5 +1,4 @@
-import mongoose, { mongo } from 'mongoose';
-
+var mongoose = require( 'mongoose');
 const TheFormed = mongoose.Schema({
     _id:String,
     Name:String,
@@ -7,4 +6,4 @@ const TheFormed = mongoose.Schema({
     SetName:String
 });
 
-export default mongoose.model('TheFormed', TheFormed, "TheFormedItems");
+module.exports = mongoose.model('TheFormed', TheFormed, "TheFormedItems");

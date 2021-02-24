@@ -1,7 +1,7 @@
-import TheHidden from '../models/TheHidden';
-import TheFeared from '../models/TheFeared';
-import TheFormed from '../models/theFormed';
-import TheTwisted from '../models/TheTwisted';
+var TheHidden = require('../models/TheHidden');
+var TheFeared = require( '../models/TheFeared');
+var TheFormed = require( '../models/theFormed');
+var TheTwisted = require( '../models/TheTwisted');
 
 class TheHiddenController{
     async getAllHidden(req,res){
@@ -44,4 +44,4 @@ class TheHiddenController{
 
 
 }
-export default new TheHiddenController();
+module.exports = new TheHiddenController();

@@ -1,5 +1,4 @@
-import mongoose, { mongo } from 'mongoose';
-
+var mongoose = require( 'mongoose');
 const TheHidden = mongoose.Schema({
     _id:String,
     Name:String,
@@ -7,6 +6,6 @@ const TheHidden = mongoose.Schema({
     SetName:String
 });
 
-export default mongoose.model('TheHidden', TheHidden, "TheHiddenItems");
+module.exports = mongoose.model('TheHidden', TheHidden, "TheHiddenItems");
 
 

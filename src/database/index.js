@@ -1,6 +1,6 @@
-import mongoose from 'mongoose';
+var mongoose = require('mongoose');
 
-export default mongoose
+module.exports = mongoose
   .connect(
     'mongodb+srv://user:0i2tBGzrvgsnAOPi@bpl3.ggyec.mongodb.net/bpl3?retryWrites=true&w=majority',
     {

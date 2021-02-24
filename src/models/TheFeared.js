@@ -1,5 +1,4 @@
-import mongoose, { mongo } from 'mongoose';
-
+var mongoose = require( 'mongoose');
 const TheFeared = mongoose.Schema({
         _id:String,
         Name:String,
@@ -7,4 +6,4 @@ const TheFeared = mongoose.Schema({
         SetName:String
 });
 
-export default mongoose.model('TheFeared', TheFeared, "TheFearedItems");
+module.exports = mongoose.model('TheFeared', TheFeared, "TheFearedItems");

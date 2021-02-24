@@ -1,4 +1,4 @@
-import mongoose, { mongo } from 'mongoose';
+var mongoose = require( 'mongoose');
 
 const Members = mongoose.Schema({
         _id:String,
@@ -11,4 +11,4 @@ const Members = mongoose.Schema({
         Class:String
 });
 
-export default mongoose.model('Members', Members, "Members");
+module.exports = mongoose.model('Members', Members, "Members");
