@@ -11,4 +11,4 @@ routes.get('/TheHidden', TheHiddenController.getAllHidden);
 routes.get('/TheFeared', TheHiddenController.getAllFeared);
 routes.get('/TheTwisted',TheHiddenController.getAllTwisted);
 routes.get('/TheFormed',TheHiddenController.getAllFormed)
-export default routes;
+module.exports = routes;
