@@ -4,7 +4,7 @@ class MemberController{
     async getAll(req,res){
         try{
             console.log(req);
-            const data = await Members.find().sort({Level:-1});
+            const data = await Members.find().sort({Level:-1, Rank:1});
             return res.status(200).json(data);
         }catch(error) {
             return res.status(404).json(error);
