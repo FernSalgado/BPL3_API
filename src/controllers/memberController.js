@@ -14,7 +14,7 @@ class MemberController{
     async getTeams(req,res){
         try{
             console.log(req);
-            const data = await Team.find();
+            const data = await Team.find().sort({TotalPoints:-1});
             return res.status(200).json(data);
         }catch(error) {
             return res.status(404).json(error);
