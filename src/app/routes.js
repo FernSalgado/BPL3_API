@@ -7,8 +7,7 @@ const routes = new Router();
 
 routes.get('/member', memberController.getAll);
 routes.get('/Teams',memberController.getTeams);
-routes.get('/TheHidden', TheHiddenController.getAllHidden);
-routes.get('/TheFeared', TheHiddenController.getAllFeared);
-routes.get('/TheTwisted',TheHiddenController.getAllTwisted);
-routes.get('/TheFormed',TheHiddenController.getAllFormed)
+routes.get('/Team1', TheHiddenController.getTeam1Items);
+routes.get('/Team2', TheHiddenController.getTeam2Items);
+routes.get('/Team3', TheHiddenController.getTeam3Items);
 module.exports = routes;
