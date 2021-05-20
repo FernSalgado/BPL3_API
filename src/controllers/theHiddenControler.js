@@ -1,47 +1,32 @@
-var TheHidden = require('../models/TheHidden');
-var TheFeared = require('../models/TheFeared');
-var TheFormed = require('../models/TheFormed');
-var TheTwisted = require( '../models/TheTwisted');
+var Team3 = require('../models/Team3');
+var Team1 = require('../models/Team1');
+var Team2 = require('../models/Team2');
 
 class TheHiddenController{
-    async getAllHidden(req,res){
+    async getTeam1Items(req,res){
         try{
-            const data = await TheHidden.find();
+            const data = await Team1.find();
             return res.status(200).json(data);
         }catch(error) {
             return res.status(404).json(error);
         }
     }
 
-    async getAllFeared(req,res){
+    async getTeam2Items(req,res){
         try{
-            const data = await TheFeared.find();
+            const data = await Team2.find();
             return res.status(200).json(data);
         }catch(error) {
             return res.status(404).json(error);
         }
     }
-
-    async getAllFormed(req,res){
+    async getTeam3Items(req,res){
         try{
-            const data = await TheFormed.find();
+            const data = await Team3.find();
             return res.status(200).json(data);
         }catch(error) {
             return res.status(404).json(error);
         }
     }
-
-    async getAllTwisted(req,res){
-        try{
-            const data = await TheTwisted.find();
-            return res.status(200).json(data);
-        }catch(error) {
-            return res.status(404).json(error);
-        }
-    }
-
-
-
-
 }
 module.exports = new TheHiddenController();
